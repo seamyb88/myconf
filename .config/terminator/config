@@ -1,0 +1,232 @@
+[global_config]
+  focus = mouse
+  title_transmit_bg_color = "#68d334"
+  title_receive_bg_color = "#68d334"
+  title_inactive_bg_color = "#68d334"
+  enabled_plugins = CustomCommandsMenu, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
+[keybindings]
+  split_horiz = <Primary><Shift>x
+  split_vert = <Primary><Shift>y
+  edit_window_title = <Alt>w
+[profiles]
+  [[default]]
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_color = "#ffffff"
+    font = Monospace 11
+    foreground_color = "#ffffff"
+    scrollback_lines = 545
+    scrollback_infinite = True
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    use_custom_command = True
+    custom_command = zsh
+  [[workflow]]
+    cursor_color = "#ffffff"
+    cursor_color_fg = False
+    foreground_color = "#ffffff"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 67:27
+      size = 1853, 1025
+      title = make openallc
+      type = Window
+    [[[terminal1]]]
+      command = ""
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+  [[New Layout]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 67:27
+      size = 1853, 1025
+      title = make openallc
+      type = Window
+    [[[terminal1]]]
+      command = ls
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+  [[parsing]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+      last_active_window = False
+      maximised = True
+      order = 0
+      parent = ""
+      position = 67:27
+      size = 1853, 1025
+      title = make openallc
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 924
+      ratio = 0.5
+      type = HPaned
+    [[[child10]]]
+      fullscreen = False
+      last_active_term = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+      last_active_window = False
+      maximised = True
+      order = 0
+      parent = ""
+      position = 67:27
+      size = 1853, 1025
+      title = make openallc
+      type = Window
+    [[[child11]]]
+      order = 0
+      parent = child10
+      position = 924
+      ratio = 0.5
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 744
+      ratio = 0.729411764706
+      type = VPaned
+    [[[child6]]]
+      fullscreen = False
+      last_active_term = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 67:27
+      size = 1853, 1025
+      title = make openallc
+      type = Window
+    [[[child7]]]
+      order = 0
+      parent = child6
+      position = 924
+      ratio = 0.5
+      type = HPaned
+    [[[terminal12]]]
+      command = env INIT_CMD="nvim src/*.cpp src/*.y src/*.l src/ctool/*" zsh
+      directory = /home/seamy/code/ctool_2.12
+      order = 0
+      parent = child11
+      profile = workflow
+      type = Terminal
+      uuid = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+    [[[terminal13]]]
+      command = env INIT_CMD="nvim include/ctool/*" zsh
+      directory = /home/seamy/code/ctool_2.12
+      order = 1
+      parent = child11
+      profile = workflow
+      type = Terminal
+      uuid = 2df7e453-674f-4c42-9690-dd238af7f38b
+    [[[terminal2]]]
+      command = env INIT_CMD="nvim src/*_src/*.cpp src/*.cpp" zsh
+      directory = /home/seamy/projects/codevelop
+      order = 0
+      parent = child1
+      profile = workflow
+      type = Terminal
+      uuid = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+    [[[terminal4]]]
+      command = env INIT_CMD="nvim inc/*.hpp Makefile" zsh
+      directory = /home/seamy/projects/codevelop
+      order = 0
+      parent = child3
+      profile = workflow
+      type = Terminal
+      uuid = 137a3d5b-f287-43dc-9093-52880c744c9d
+    [[[terminal5]]]
+      command = zsh
+      directory = /home/seamy/projects/codevelop
+      order = 1
+      parent = child3
+      profile = workflow
+      type = Terminal
+      uuid = 2174095e-3b8d-4de0-93e8-01bb89fe2cd5
+    [[[terminal8]]]
+      command = env INIT_CMD="make openallc" zsh
+      #    command = nvim src/*_src/*.c src/*.c; zsh
+      directory = /home/seamy/projects/lin_alg
+      order = 0
+      parent = child7
+      profile = workflow
+      type = Terminal
+      uuid = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+    [[[terminal9]]]
+      command = env INIT_CMD="make openallh" zsh
+      #   command = "'nvim Makefile; bash'"
+      directory = /home/seamy/projects/lin_alg
+      order = 1
+      parent = child7
+      profile = workflow
+      type = Terminal
+      uuid = 21953e03-0aac-4457-9c08-6877985724ab
+  [[review]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 67:27
+      size = 1853, 1025
+      title = make openallc
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 924
+      ratio = 0.5
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 816
+      ratio = 0.8
+      type = VPaned
+    [[[terminal2]]]
+      command = env INIT_CMD="make openallc" zsh
+      directory = /home/seamy/projects/gs_review
+      order = 0
+      parent = child1
+      profile = workflow
+      type = Terminal
+      uuid = d5deeb2e-a4c5-4b76-8bb7-2fefe0729611
+    [[[terminal4]]]
+      command = env INIT_CMD="make openallh" zsh
+      directory = /home/seamy/projects/gs_review
+      order = 0
+      parent = child3
+      profile = workflow
+      type = Terminal
+      uuid = 0a1e7c63-f2f1-4a53-b97d-16943cdac73d
+    [[[terminal5]]]
+      command = ""
+      directory = /home/seamy/projects/gs_review
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 9437e253-7f56-4005-a49c-9f8e180315bc
+[plugins]
